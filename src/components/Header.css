@@ -1,0 +1,51 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  height: var(--header-h);
+  padding: 0 40px;
+  background: #ffffff;
+  border-bottom: 1px solid var(--line);
+  font-family: Calibri, Candara, Segoe UI, Optima, Arial, sans-serif;
+}
+
+.brand {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 28px;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--ink);
+  padding: 4px 0;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    height: auto;
+    min-height: var(--header-h);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 16px;
+    gap: 10px;
+  }
+}

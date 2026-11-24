@@ -1,0 +1,150 @@
+.viz {
+  width: 100%;
+  background: #f4f6f8;
+  border: 1px solid #d7dee6;
+  font-family: Calibri, Candara, Segoe UI, Optima, Arial, sans-serif;
+  color: #1c2430;
+  overflow: hidden;
+}
+
+.viz svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.viz-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background: #fff;
+  border-bottom: 1px solid #d7dee6;
+}
+
+.viz-toolbar .zoom {
+  display: flex;
+  gap: 6px;
+}
+
+.viz-toolbar button {
+  border: 1px solid #d7dee6;
+  background: #fff;
+  width: 28px;
+  height: 28px;
+  font-size: 14px;
+  border-radius: 0;
+  cursor: default;
+}
+
+.viz-toolbar .legend {
+  border: 1px solid #d7dee6;
+  background: #fff;
+  padding: 6px 10px;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  border-radius: 0;
+  cursor: default;
+}
+
+.viz-land {
+  fill: #d9e0e7;
+  stroke: #c5ced8;
+  stroke-width: 0.8;
+}
+
+.viz-label {
+  font-size: 10px;
+  fill: #5c6570;
+}
+
+.viz-title {
+  font-size: 11px;
+  font-weight: 700;
+  fill: #1c2430;
+}
+
+.viz-chip {
+  fill: #fff;
+  stroke: #d7dee6;
+  stroke-width: 1.4;
+}
+
+.viz-panel {
+  fill: #fff;
+  stroke: #1c2430;
+  stroke-width: 1.6;
+}
+
+.viz-legend-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  padding: 10px 12px;
+  background: #fff;
+  border-top: 1px solid #d7dee6;
+  font-size: 12px;
+  color: #5c6570;
+}
+
+.viz-legend-row span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.viz-sw {
+  width: 18px;
+  height: 3px;
+  display: inline-block;
+}
+
+.adv-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  padding: 16px;
+  background: #eef1f4;
+}
+
+.adv-card {
+  background: #fff;
+  border: 1px solid #d7dee6;
+  padding: 14px;
+  min-height: 170px;
+}
+
+.adv-card .num {
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: #5c6570;
+  margin-bottom: 8px;
+}
+
+.adv-card h3 {
+  margin: 10px 0 6px;
+  font-size: 1rem;
+}
+
+.adv-card p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: #5c6570;
+}
+
+.adv-card .tag {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 11px;
+  color: #2f5d4a;
+  background: #e4f0ea;
+  border: 1px solid #b7d0c3;
+  padding: 3px 7px;
+}
+
+@media (max-width: 900px) {
+  .adv-grid {
+    grid-template-columns: 1fr;
+  }
+}

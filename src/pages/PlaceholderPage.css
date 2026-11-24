@@ -1,0 +1,33 @@
+.placeholder {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  font-family: Calibri, Candara, Segoe UI, Optima, Arial, sans-serif;
+}
+
+.placeholder .eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.placeholder h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.placeholder p {
+  margin: 12px 0 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.placeholder .back {
+  display: inline-block;
+  margin-top: 28px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 2px;
+}

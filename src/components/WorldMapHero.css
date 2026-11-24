@@ -1,0 +1,156 @@
+.map-hero {
+  position: relative;
+  background: var(--map-sea);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  min-height: 420px;
+  height: 100%;
+}
+
+.map-svg {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+}
+
+.land {
+  fill: var(--map-land);
+  stroke: #c5ced8;
+  stroke-width: 0.8;
+}
+
+.apac-ring {
+  fill: rgba(193, 95, 39, 0.08);
+  stroke: rgba(193, 95, 39, 0.4);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 4;
+}
+
+.apac-label {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  fill: var(--aws);
+}
+
+.edge {
+  fill: none;
+  stroke-linecap: square;
+}
+
+.edge-idle {
+  stroke: #9aa3ad;
+  stroke-width: 1.6;
+  stroke-dasharray: 4 5;
+  opacity: 0.85;
+}
+
+.edge-active {
+  stroke: var(--aws);
+  stroke-width: 2.2;
+}
+
+.edge-mesh {
+  stroke: var(--gcp);
+  stroke-width: 2;
+  stroke-dasharray: 6 4;
+}
+
+.edge.dim {
+  opacity: 0.18;
+}
+
+.marker-card {
+  fill: #fff;
+  stroke: var(--line);
+  stroke-width: 1.4;
+}
+
+.marker.selected .marker-card {
+  stroke: var(--ink);
+  stroke-width: 2;
+}
+
+.marker-title {
+  font-family: "Sora", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  fill: var(--ink);
+}
+
+.marker-sub {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 9px;
+  fill: var(--muted);
+}
+
+.map-controls {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 2;
+}
+
+.map-controls button,
+.legend-btn {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  font-size: 16px;
+  border-radius: 0;
+}
+
+.legend-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: auto;
+  padding: 0 12px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  z-index: 2;
+}
+
+.legend-pop {
+  position: absolute;
+  top: 54px;
+  right: 12px;
+  z-index: 3;
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 12px;
+  font-size: 12px;
+  color: var(--muted);
+  display: grid;
+  gap: 8px;
+  min-width: 170px;
+}
+
+.legend-pop div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sw {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  border: 1px solid var(--line);
+}
+
+.sw.aws { background: var(--aws); }
+.sw.azure { background: var(--azure); }
+.sw.gcp { background: var(--gcp); }
+.sw.oci { background: var(--oci); }
+.sw.idle {
+  background: linear-gradient(90deg, #9aa3ad 50%, transparent 50%);
+  background-size: 6px 14px;
+}
+.sw.active { background: var(--aws); height: 3px; border: none; }
